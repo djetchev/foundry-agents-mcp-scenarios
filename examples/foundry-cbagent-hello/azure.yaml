@@ -4,6 +4,13 @@ name: foundry-cbagent-hello
 metadata:
   template: foundry-cbagent-hello
 
+infra:
+  provider: bicep
+  path: ./infra
+
+pipeline:
+  provider: github
+
 services:
   agent:
     project: .
